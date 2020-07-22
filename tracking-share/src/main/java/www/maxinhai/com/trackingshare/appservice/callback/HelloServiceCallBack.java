@@ -16,4 +16,12 @@ public class HelloServiceCallBack implements HelloService {
         return null;
     }
 
+    @Override
+    public Map<String, Object> test() throws Exception {
+        Map<String, Object> result = new HashMap<>();
+        result.put("message", "tracking模块");
+        result.put("success", false);
+        result.put("code", 500);
+        return null;
+    }
 }

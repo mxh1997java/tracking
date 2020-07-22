@@ -13,4 +13,7 @@ public interface HelloService {
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public Map<String, Object> hello(@RequestParam("name") String name) throws Exception;
 
+    @RequestMapping(value = "/test", method = RequestMethod.GET)
+    public Map<String, Object> test() throws Exception;
+
 }
